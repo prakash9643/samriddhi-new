@@ -61,7 +61,7 @@ export const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
             <div className="md:w-2/5 bg-primary p-12 text-white flex flex-col justify-between">
               <div>
                 <img 
-                  src="/logo.png" 
+                  src="/images/Samriddhi-logo.png" 
                   alt="Samriddhi Logo" 
                   className="h-16 w-auto object-contain brightness-0 invert mb-8"
                   referrerPolicy="no-referrer"

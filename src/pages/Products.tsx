@@ -66,42 +66,42 @@ const ManufacturingVerticals = () => {
     {
       title: "Classical Ayurveda",
       category: "Herbaceuticals",
-      img: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=800",
+      img: "/images/1.png",
       features: ["Traditional Juices", "Asav & Arishta", "Bhasma & Pishti", "Pure Herbs"],
       icon: <Leaf className="w-6 h-6" />
     },
     {
       title: "Cosmetic Excellence",
       category: "Personal Care",
-      img: "https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=800",
+      img: "/images/3.png",
       features: ["Premium Serums", "Facial Creams", "Hair Therapeutics", "Body Rituals"],
       icon: <Sparkles className="w-6 h-6" />
     },
     {
       title: "Wellness Nutrition",
       category: "Nutraceuticals",
-      img: "https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=800",
+      img: "/images/2.png",
       features: ["Vitality Capsules", "Immunity Syrups", "Protein Powders", "Daily Multivitamins"],
       icon: <FlaskConical className="w-6 h-6" />
     },
     {
       title: "Scent Artistry",
       category: "Fragrances",
-      img: "https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800",
+      img: "/images/fragrance.png",
       features: ["Luxury Perfumes", "Attars", "Room Mists", "Essential Oil Blends"],
       icon: <Flower2 className="w-6 h-6" />
     },
     {
       title: "Advanced Oral Care",
       category: "Hygiene",
-      img: "https://images.unsplash.com/photo-1559594412-4f7f6a72666d?q=80&w=800",
+      img: "/images/5.png",
       features: ["Herbal Toothpaste", "Mouthwash", "Gum Gels", "Oil Pulling Rituals"],
       icon: <Droplets className="w-6 h-6" />
     },
     {
       title: "Derma Solutions",
       category: "Skin Tech",
-      img: "https://images.unsplash.com/photo-1612833603922-3bb3ca492d47?q=80&w=800",
+      img: "/images/3.png",
       features: ["Medicated Creams", "UV Protectors", "Anti-Aging Tech", "Repair Balms"],
       icon: <Zap className="w-6 h-6" />
     }
@@ -212,11 +212,11 @@ const QualityCertifications = () => {
         <div className="relative">
           <div className="aspect-square rounded-[4rem] overflow-hidden shadow-premium relative z-10">
             <img 
-              src="https://images.unsplash.com/photo-1579154235602-3c2c2aa95094?q=80&w=1000" 
+              src="/images/uncompromising.png" 
               alt="Quality Lab" 
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-tr from-primary/60 to-transparent" /> */}
           </div>
           <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-accent/20 rounded-full blur-3xl -z-10 animate-pulse" />
         </div>

@@ -15,7 +15,7 @@ export const Facility = () => {
           <motion.div style={{ scale, y }}>
             <div className="relative rounded-[4rem] overflow-hidden shadow-premium border-[16px] border-warm-bg">
               <img 
-                src="/images/main.png" 
+                src="/images/manu.png" 
                 alt="Advanced Facility" 
                 className="w-full h-auto"
                 referrerPolicy="no-referrer"

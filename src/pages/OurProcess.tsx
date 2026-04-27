@@ -42,6 +42,7 @@ const ProcessPage = () => {
     { 
       title: 'Idea', 
       icon: <MessageSquare />, 
+      image: "/images/our-process/1.png",
       floatingIcons: [MessageSquare, Sparkles, Beaker],
       desc: 'Concept & Vision',
       detail: 'We brainstorm your brand identity and product goals to create a unique market positioning. Our team helps you define the scope and target audience for your product.',
@@ -51,6 +52,7 @@ const ProcessPage = () => {
     { 
       title: 'Consult', 
       icon: <Users />, 
+      image: "/images/our-process/2.png",
       floatingIcons: [Users, ShieldCheck, Microscope],
       desc: 'Expert Strategy',
       detail: 'Our industry veterans provide strategic insights on formulations, pricing, and market trends to ensure your product is competitive.',
@@ -60,6 +62,7 @@ const ProcessPage = () => {
     { 
       title: 'Sample', 
       icon: <Beaker />, 
+      image: "/images/our-process/3.png",
       floatingIcons: [Beaker, FlaskConical, Sparkles],
       desc: 'Lab Prototyping',
       detail: 'Rigorous R&D to develop samples that meet your specific requirements and quality standards for your approval.',
@@ -69,6 +72,7 @@ const ProcessPage = () => {
     { 
       title: 'Brand', 
       icon: <Palette />, 
+      image: "/images/our-process/4.png",
       floatingIcons: [Palette, PackageCheck, Sparkles],
       desc: 'Identity Design',
       detail: 'Our creative team crafts premium packaging and labels that resonate with your target audience and meet legal standards.',
@@ -78,6 +82,7 @@ const ProcessPage = () => {
     { 
       title: 'Deliver', 
       icon: <Truck />, 
+      image: "/images/our-process/5.png",
       floatingIcons: [Truck, PackageCheck, ShieldCheck],
       desc: 'Global Scale',
       detail: 'Seamless bulk production and logistics to get your products to market efficiently and safely across the globe.',
@@ -171,15 +176,18 @@ const ProcessPage = () => {
                 
                 <div className="flex-1 relative w-full perspective-1000">
                   <motion.div 
-                    whileHover={{ rotateY: i % 2 === 0 ? -10 : 10, rotateX: 5 }}
+                    whileHover={{ rotateY: i % 2 === 0 ? -10 : 10, rotateX: 5, scale: 1.02 }}
                     transition={{ type: "spring", stiffness: 100 }}
-                    className="aspect-square bg-white rounded-[4rem] shadow-premium p-4 md:p-8 relative z-10 border border-primary/5"
+                    className="aspect-square bg-white rounded-[4rem] shadow-premium p-4 md:p-6 relative z-10 border border-primary/5 overflow-hidden"
                   >
-                    <div className={`w-full h-full rounded-[3.5rem] ${step.color.replace('text-', 'bg-').split(' ')[0]}/5 flex items-center justify-center relative overflow-hidden group`}>
-                      <div className="absolute inset-0 bg-white/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      {React.cloneElement(step.icon as React.ReactElement, { 
-                        className: `w-32 h-32 md:w-48 md:h-48 ${step.color.split(' ')[1]} opacity-20 group-hover:scale-110 transition-transform duration-700` 
-                      })}
+                    <div className="w-full h-full rounded-[3.5rem] overflow-hidden relative group">
+                      <img 
+                        src={step.image} 
+                        alt={step.title}
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      />
+                      <div className={`absolute inset-0 ${step.color.replace('text-', 'bg-').split(' ')[0]}/20 mix-blend-multiply opacity-30`}></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
                     </div>
                   </motion.div>
 

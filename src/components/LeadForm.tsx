@@ -70,8 +70,9 @@ export const LeadForm = () => {
               <label className="text-xs font-black text-primary uppercase tracking-widest">Product Category</label>
               <select className="w-full px-8 py-5 rounded-2xl bg-white/50 border-none focus:ring-2 focus:ring-primary transition-all font-bold text-primary appearance-none">
                 <option>Select Category</option>
-                <option>Ayurveda</option>
+                <option>Morden Ayurveda</option>
                 <option>Cosmetics</option>
+                <option>Attar & Fragrance</option>
                 <option>Hair Care</option>
                 <option>Skin Care</option>
                 <option>Supplements</option>

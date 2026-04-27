@@ -50,8 +50,8 @@ export const Footer = () => {
                       link === 'Home' ? '/' : 
                       link === 'Products' ? '/products' : 
                       link === 'Company' ? '/about' : 
-                      link === 'Services' ? '/#services' : 
-                      link === 'Our Process' ? '/#process' : '#'
+                      link === 'Services' ? '/servixces' : 
+                      link === 'Our Process' ? '/process' : '#'
                     } 
                     className="text-white/40 hover:text-accent transition-colors font-bold uppercase tracking-widest text-[10px]"
                   >
@@ -65,9 +65,9 @@ export const Footer = () => {
           <div>
             <h4 className="text-white font-black uppercase tracking-[0.2em] text-xs mb-10">Categories</h4>
             <ul className="space-y-6">
-              {['Ayurveda', 'Cosmetics', 'Fragrance', 'Hair Care', 'Skin Care', 'Supplements'].map((link) => (
+              {['Morden Ayurveda', 'Cosmetics', 'Attar & Fragrance', 'Hair Care', 'Skin Care', 'Supplements'].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-white/40 hover:text-accent transition-colors font-bold uppercase tracking-widest text-[10px]">{link}</a>
+                  <a href="/#products" className="text-white/40 hover:text-accent transition-colors font-bold uppercase tracking-widest text-[10px]">{link}</a>
                 </li>
               ))}
             </ul>
@@ -85,11 +85,6 @@ export const Footer = () => {
               <button className="absolute right-3 top-1/2 -translate-y-1/2 bg-accent text-primary p-3 rounded-xl shadow-lg hover:scale-105 transition-transform">
                 <Leaf className="w-5 h-5" />
               </button>
-            </div>
-            
-            <div className="mt-12 flex items-center gap-6 opacity-30">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/ISO_9001_Logo.svg/1200px-ISO_9001_Logo.svg.png" alt="ISO" className="h-10 grayscale invert" referrerPolicy="no-referrer" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/GMP_logo.svg/1200px-GMP_logo.svg.png" alt="GMP" className="h-10 grayscale invert" referrerPolicy="no-referrer" />
             </div>
           </div>
         </div>

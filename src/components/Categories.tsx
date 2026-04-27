@@ -6,12 +6,12 @@ import { TextReveal } from './TextReveal';
 
 export const Categories = () => {
   const categories = [
-    { name: 'Ayurveda', icon: <Leaf />, img: '/images/category.png', size: 'lg' },
+    { name: 'Morden Ayurveda', icon: <Leaf />, img: '/images/category.png', size: 'lg' },
     { name: 'Cosmetics', icon: <Sparkles />, img: '/images/cosmetic.png', size: 'sm' },
-    { name: 'Fragrance', icon: <Wind />, img: '/images/fragnance.png', size: 'sm' },
+    { name: 'Attar & Fragrance', icon: <Wind />, img: '/images/fragrance.png', size: 'sm' },
     { name: 'Hair Care', icon: <Droplets />, img: '/images/haicare.png', size: 'lg' },
     { name: 'Skin Care', icon: <Sun />, img: '/images/skincare.png', size: 'sm' },
-    { name: 'Supplements', icon: <FlaskConical />, img: '/images/wellness.png', size: 'lg' },
+    { name: 'Supplements', icon: <FlaskConical />, img: '/images/suppliment.png', size: 'lg' },
   ];
 
   return (

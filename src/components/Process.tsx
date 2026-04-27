@@ -1,9 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { MessageSquare, Users, Beaker, Palette, Truck, Sparkles, ArrowRight } from 'lucide-react';
 import { TextReveal } from './TextReveal';
+import { QuoteModal } from '../components/QuoteModal';
 
 export const Process = () => {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const steps = [
     { 
       title: 'Idea', 
@@ -132,7 +134,9 @@ export const Process = () => {
           whileInView={{ opacity: 1, y: 0 }}
           className="mt-32 flex justify-center"
         >
-          <button className="glass px-12 py-6 rounded-full flex items-center gap-4 group hover:bg-primary hover:text-white transition-all duration-500">
+          <button
+          onClick={() => setIsQuoteModalOpen(true)} 
+          className="glass px-12 py-6 rounded-full flex items-center gap-4 group hover:bg-primary hover:text-white transition-all duration-500">
             <span className="text-sm font-black uppercase tracking-widest">Start Your Journey</span>
             <div className="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-primary group-hover:bg-white transition-colors">
               <ArrowRight className="w-5 h-5" />
@@ -140,6 +144,7 @@ export const Process = () => {
           </button>
         </motion.div>
       </div>
+      <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
     </section>
   );
 };

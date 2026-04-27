@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform, useSpring, useMotionValue } from "motion/react";
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { 
   Leaf, 
   Sparkles, 
@@ -15,6 +15,7 @@ import {
   Globe,
   Heart
 } from "lucide-react";
+import { QuoteModal } from '../components/QuoteModal';
 
 // Spotlight Card component for Categories
 interface SpotlightCardProps {
@@ -164,7 +165,7 @@ const Hero = () => {
   const yText = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const scaleImage = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-
+  
   return (
     <section ref={ref} className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-transparent pt-32 pb-20">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-4xl bg-primary/[0.02] rounded-full blur-[120px] -z-10" />
@@ -304,8 +305,8 @@ const ProductCategories = () => {
     { title: "Ayurvedic & Herbal", desc: "Classical and proprietary formulations including juices, churnas, tablets, and capsules.", image: "/images/1.png", color: "from-green-500/10 to-emerald-500/10" },
     { title: "Modern Ayurveda", desc: "New-age wellness products combining Ayurveda with modern science for lifestyle diseases.", image: "/images/2.png", color: "from-emerald-500/10 to-teal-500/10" },
     { title: "Cosmetics & Care", desc: "Skincare, haircare, and beauty products made with premium natural extracts.", image: "/images/cosmetic.png", color: "from-teal-500/10 to-blue-500/10" },
-    { title: "Nutraceuticals", desc: "Capsules, syrups, and health supplements for immunity and daily nutrition.", image: "/images/wellness.png", color: "from-blue-500/10 to-indigo-500/10" },
-    { title: "Fragrances", desc: "Premium perfume manufacturing with long-lasting formulations and private label options.", image: "/images/fragnance.png", color: "from-rose-500/10 to-pink-500/10" },
+    { title: "Nutraceuticals", desc: "Capsules, syrups, and health supplements for immunity and daily nutrition.", image: "/images/new-supp.png", color: "from-blue-500/10 to-indigo-500/10" },
+    { title: "Attar & Fragrances", desc: "Premium perfume manufacturing with long-lasting formulations and private label options.", image: "/images/frag.png", color: "from-rose-500/10 to-pink-500/10" },
     { title: "Oral Care", desc: "Herbal toothpaste and oral hygiene products developed with safe ingredients.", image: "/images/5.png", color: "from-cyan-500/10 to-sky-500/10" },
   ];
 
@@ -508,25 +509,32 @@ const VisionMission = () => {
 };
 
 const CTA = () => {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   return (
-    <section className="py-40 relative overflow-hidden bg-primary">
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="glass-dark p-8 md:p-16 lg:p-32 rounded-[2.5rem] md:rounded-[5rem] text-center space-y-8 border border-white/5 shadow-2xl">
-          <h2 className="text-4xl md:text-6xl lg:text-9xl font-bold text-white tracking-tighter leading-[0.9]">
-            Build Your Brand with a <br className="hidden md:block" />
-            <span className="text-accent italic font-light">Reliable Partner</span>
-          </h2>
-          <p className="text-lg md:text-2xl font-light text-white/60 max-w-3xl mx-auto">
-            Join hands with India's leading Ayurvedic manufacturing experts. From formulation to final packaging, we bring your vision to life with precision and care.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8">
-            <button className="px-8 md:px-16 py-4 md:py-8 bg-accent text-primary rounded-full text-lg md:text-2xl font-bold flex items-center justify-center gap-4 shadow-xl hover:scale-105 transition-all">
-              Free Consultation <ArrowRight />
-            </button>
+    <>
+      <section className="py-40 relative overflow-hidden bg-primary">
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="glass-dark p-8 md:p-16 lg:p-32 rounded-[2.5rem] md:rounded-[5rem] text-center space-y-8 border border-white/5 shadow-2xl">
+            <h2 className="text-4xl md:text-6xl lg:text-9xl font-bold text-white tracking-tighter leading-[0.9]">
+              Build Your Brand with a <br className="hidden md:block" />
+              <span className="text-accent italic font-light">Reliable Partner</span>
+            </h2>
+            <p className="text-lg md:text-2xl font-light text-white/60 max-w-3xl mx-auto">
+              Join hands with India's leading Ayurvedic manufacturing experts. From formulation to final packaging, we bring your vision to life with precision and care.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 pt-8">
+              <button
+                onClick={() => setIsQuoteModalOpen(true)} 
+                className="px-8 md:px-16 py-4 md:py-8 bg-accent text-primary rounded-full text-lg md:text-2xl font-bold flex items-center justify-center gap-4 shadow-xl hover:scale-105 transition-all"
+              >
+                Free Consultation <ArrowRight />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
+    </>
   );
 };
 

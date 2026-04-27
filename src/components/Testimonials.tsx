@@ -5,9 +5,9 @@ import { TextReveal } from './TextReveal';
 
 export const Testimonials = () => {
   const reviews = [
-    { name: 'Sarah Johnson', brand: 'Glow Skincare', text: 'Samriddhi transformed our vision into a market-leading product line. Their attention to detail is exceptional.', img: 'https://picsum.photos/seed/u1/100/100' },
+    { name: 'Prachi Sharma', brand: 'Glow Skincare', text: 'Samriddhi transformed our vision into a market-leading product line. Their attention to detail is exceptional.', img: 'https://picsum.photos/seed/u1/100/100' },
     { name: 'Rahul Mehta', brand: 'Veda Wellness', text: 'The best partner for Ayurvedic manufacturing. Their MOQs allowed us to scale sustainably.', img: 'https://picsum.photos/seed/u2/100/100' },
-    { name: 'Elena Rodriguez', brand: 'Pure Hair', text: 'Professional, creative, and reliable. Their packaging design team is truly world-class.', img: 'https://picsum.photos/seed/u3/100/100' },
+    { name: 'Anjali Garg', brand: 'Pure Hair', text: 'Professional, creative, and reliable. Their packaging design team is truly world-class.', img: 'https://picsum.photos/seed/u3/100/100' },
   ];
 
   return (

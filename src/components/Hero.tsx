@@ -1,15 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { Sparkles, ArrowRight, Award, ShieldCheck, FileCheck } from 'lucide-react';
 import { Magnetic } from './Magnetic';
 import { TextReveal } from './TextReveal';
+import { QuoteModal } from '../components/QuoteModal';
 
 export const Hero = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 500], [0, 200]);
   const y2 = useTransform(scrollY, [0, 500], [0, -150]);
   const rotate = useTransform(scrollY, [0, 500], [0, 15]);
-
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-mesh">
       {/* Animated background blobs */}
@@ -86,6 +87,7 @@ export const Hero = () => {
             <Magnetic>
               <motion.button 
                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(26, 60, 26, 0.2)" }}
+                onClick={() => setIsQuoteModalOpen(true)}
                 whileTap={{ scale: 0.95 }}
                 className="bg-primary text-accent px-10 py-5 rounded-2xl font-black text-lg uppercase tracking-widest flex items-center gap-3 shadow-2xl transition-all"
               >
@@ -94,6 +96,7 @@ export const Hero = () => {
             </Magnetic>
             <Magnetic>
               <motion.button 
+                href="/products"
                 whileHover={{ backgroundColor: "rgba(26, 60, 26, 0.05)" }}
                 className="px-10 py-5 rounded-2xl font-black text-lg uppercase tracking-widest text-primary border-2 border-primary/10 transition-all"
               >
@@ -159,6 +162,7 @@ export const Hero = () => {
           </motion.div>
         </div>
       </div>
+      <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
     </section>
   );
 };

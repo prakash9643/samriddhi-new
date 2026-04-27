@@ -1,17 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { QuoteModal } from '../components/QuoteModal';
 
 export const FeaturedProducts = () => {
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const products = [
     { name: 'Herbal Face Wash', cat: 'Skin Care', img: '/images/shampoo.png' },
     { name: 'Serum', cat: 'Skin Care', img: '/images/8.png' },
     { name: 'Onion Hair Oil', cat: 'Hair Care', img: '/images/haicare.png' },
     { name: 'Biotin Shampoo', cat: 'Hair Care', img: '/images/10.png' },
-    { name: 'Luxury Perfume', cat: 'Fragrance', img: 'images/11.png' },
+    { name: 'Attar & Fragrance', cat: 'Fragrance', img: '/images/fragrance.png' },
     { name: 'Immunity Caps', cat: 'Supplements', img: '/images/9.png' },
   ];
-
   return (
     <section className="py-32 bg-warm-bg overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -24,6 +25,7 @@ export const FeaturedProducts = () => {
           </div>
           <motion.button 
             whileHover={{ scale: 1.05 }}
+            onClick={() => setIsQuoteModalOpen(true)}
             className="bg-primary text-accent px-10 py-5 rounded-2xl font-black uppercase tracking-widest text-sm shadow-2xl"
           >
             Request Catalogue
@@ -66,6 +68,7 @@ export const FeaturedProducts = () => {
           ))}
         </div>
       </div>
+      <QuoteModal isOpen={isQuoteModalOpen} onClose={() => setIsQuoteModalOpen(false)} />
     </section>
   );
 };
