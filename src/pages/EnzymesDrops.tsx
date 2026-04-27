@@ -12,8 +12,8 @@ const EnzymesDropsPage = () => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const stats = [
-    { label: 'Formulations', value: '30+' },
-    { label: 'Brands', value: '15+' }
+    { label: 'Formulations', value: '450+' },
+    { label: 'Brands', value: '90+' }
   ];
 
   const capabilities = [

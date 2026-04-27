@@ -4,13 +4,13 @@ import { TextReveal } from './TextReveal';
 
 import { Tilt } from './Tilt';
 const certifications = [
-  { name: 'ISO 9001:2008', logo: '/public/images/icons/iso-logo.png', desc: 'International standard for quality management systems.', size: 'large' },
-  { name: 'WHO', logo: '/images/icons/who.png', desc: 'World Health Organization standards compliance.', size: 'medium' },
-  { name: 'FSSAI', logo: '/images/icons/fssai.png', desc: 'Food Safety and Standards Authority of India.', size: 'medium' },
-  { name: 'HALAL INDIA', logo: '/images/icons/halal.png', desc: 'Certified Halal products for global markets.', size: 'small' },
-  { name: 'GMP Quality', logo: '/images/icons/GMP.png', desc: 'Good Manufacturing Practices for consistent quality.', size: 'large' },
-  { name: 'Ministry of Ayush', logo: '/images/icons/MA.png', desc: 'Recognized by the Ministry of Commerce & Industry.', size: 'small' },
-  { name: 'Make In India', logo: '/images/icons/MI.png', desc: 'Supporting national manufacturing excellence.', size: 'medium' },
+  { name: 'ISO 9001:2008', src: '/images/icons/iso-logo.png', desc: 'International standard for quality management systems.', size: 'large' },
+  { name: 'WHO', src: '/images/icons/who.png', desc: 'World Health Organization standards compliance.', size: 'medium' },
+  { name: 'FSSAI', src: '/images/icons/fssai.png', desc: 'Food Safety and Standards Authority of India.', size: 'medium' },
+  { name: 'HALAL INDIA', src: '/images/icons/halal.png', desc: 'Certified Halal products for global markets.', size: 'small' },
+  { name: 'GMP Quality', src: '/images/icons/GMP.png', desc: 'Good Manufacturing Practices for consistent quality.', size: 'large' },
+  { name: 'Ministry of Ayush', src: '/images/icons/MA.png', desc: 'Recognized by the Ministry of Commerce & Industry.', size: 'small' },
+  { name: 'Make In India', src: '/images/icons/MI.png', desc: 'Supporting national manufacturing excellence.', size: 'medium' },
 ];
 
 export const Certifications = () => {
@@ -40,7 +40,7 @@ export const Certifications = () => {
               <div key={i} className="flex items-center gap-4 group cursor-pointer">
                 <div className="w-12 h-12 transition-all duration-500">
                   <img 
-                    src={cert.logo} 
+                    src={cert.src} 
                     alt={cert.name} 
                     className="w-full h-full object-contain"
                     referrerPolicy="no-referrer"

@@ -12,8 +12,8 @@ const CapsulePage = () => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const stats = [
-    { label: 'Formulations', value: '60+' },
-    { label: 'Brands', value: '25+' }
+    { label: 'Formulations', value: '450+' },
+    { label: 'Brands', value: '90+' }
   ];
 
   const capabilities = [

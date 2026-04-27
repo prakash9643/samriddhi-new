@@ -12,8 +12,8 @@ const SyrupPage = () => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const stats = [
-    { label: 'Formulations', value: '100+' },
-    { label: 'Brands', value: '40+' }
+    { label: 'Formulations', value: '450+' },
+    { label: 'Brands', value: '90+' }
   ];
 
   const capabilities = [

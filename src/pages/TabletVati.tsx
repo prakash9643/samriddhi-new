@@ -12,8 +12,8 @@ const TabletVatiPage = () => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const stats = [
-    { label: 'Formulations', value: '80+' },
-    { label: 'Brands', value: '30+' }
+    { label: 'Formulations', value: '450+' },
+    { label: 'Brands', value: '90+' }
   ];
 
   const capabilities = [

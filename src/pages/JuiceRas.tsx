@@ -17,8 +17,8 @@ const JuiceRasPage = () => {
   const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
 
   const stats = [
-    { label: 'Formulations', value: '95+' },
-    { label: 'Brands', value: '35+' }
+    { label: 'Formulations', value: '450+' },
+    { label: 'Brands', value: '90+' }
   ];
 
   const capabilities = [
