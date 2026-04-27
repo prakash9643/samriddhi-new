@@ -4,7 +4,7 @@ import { TextReveal } from './TextReveal';
 
 import { Tilt } from './Tilt';
 const certifications = [
-  { name: 'ISO 9001:2008', logo: '/images/icons/iso-logo.png', desc: 'International standard for quality management systems.', size: 'large' },
+  { name: 'ISO 9001:2008', logo: '/public/images/icons/iso-logo.png', desc: 'International standard for quality management systems.', size: 'large' },
   { name: 'WHO', logo: '/images/icons/who.png', desc: 'World Health Organization standards compliance.', size: 'medium' },
   { name: 'FSSAI', logo: '/images/icons/fssai.png', desc: 'Food Safety and Standards Authority of India.', size: 'medium' },
   { name: 'HALAL INDIA', logo: '/images/icons/halal.png', desc: 'Certified Halal products for global markets.', size: 'small' },
