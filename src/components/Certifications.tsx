@@ -61,7 +61,7 @@ export const Certifications = () => {
             <div className="flex items-center gap-4 group cursor-pointer">
               <div className="w-12 h-12 transition-all duration-500">
                 <img 
-                  src="/public/images/icons/iso-logo.png" 
+                  src="/images/icons/iso-logo.png" 
                   alt="ISO" 
                   className="w-full h-full object-contain"
                   referrerPolicy="no-referrer"
