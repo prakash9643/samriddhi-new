@@ -4,21 +4,22 @@ import { TextReveal } from './TextReveal';
 
 import { Tilt } from './Tilt';
 
-import ISO from '/public/images/icons/iso-logo.png';
-import WHO from '/public/images/icons/who.png';
-import FSSAI from '/public/images/icons/fssai.png';
-import HALAL from '/public/images/icons/halal.png';
-import GMP from '/public/images/icons/GMP.png';
-import MA from '/public/images/icons/MA.png';
-import MI from '/public/images/icons/MI.png';
+// import ISO from ;
+// import WHO from ;
+// import FSSAI from '/public/images/icons/fssai.png';
+// import HALAL from '/public/images/icons/halal.png';
+// import GMP from '/public/images/icons/GMP.png';
+// import MA from '/public/images/icons/MA.png';
+// import MI from '/public/images/icons/MI.png';
+
 const certifications = [
-  { name: 'ISO 9001:2008', src: ISO, desc: 'International standard for quality management systems.', size: 'large' },
-  { name: 'WHO', src: WHO, desc: 'World Health Organization standards compliance.', size: 'medium' },
-  { name: 'FSSAI', src: FSSAI, desc: 'Food Safety and Standards Authority of India.', size: 'medium' },
-  { name: 'HALAL INDIA', src: HALAL, desc: 'Certified Halal products for global markets.', size: 'small' },
-  { name: 'GMP Quality', src: GMP, desc: 'Good Manufacturing Practices for consistent quality.', size: 'large' },
-  { name: 'Ministry of Ayush', src: MA, desc: 'Recognized by the Ministry of Commerce & Industry.', size: 'small' },
-  { name: 'Make In India', src: MI, desc: 'Supporting national manufacturing excellence.', size: 'medium' },
+  { name: 'ISO 9001:2008', src: '/public/images/icons/iso-logo.png', desc: 'International standard for quality management systems.', size: 'large' },
+  { name: 'WHO', src: '/public/images/icons/who.png', desc: 'World Health Organization standards compliance.', size: 'medium' },
+  { name: 'FSSAI', src: '/public/images/icons/fssai.png', desc: 'Food Safety and Standards Authority of India.', size: 'medium' },
+  { name: 'HALAL INDIA', src: '/public/images/icons/halal.png', desc: 'Certified Halal products for global markets.', size: 'small' },
+  { name: 'GMP Quality', src: '/public/images/icons/GMP.png', desc: 'Good Manufacturing Practices for consistent quality.', size: 'large' },
+  { name: 'Ministry of Ayush', src: '/public/images/icons/MA.png', desc: 'Recognized by the Ministry of Commerce & Industry.', size: 'small' },
+  { name: 'Make In India', src: '/public/images/icons/MI.png', desc: 'Supporting national manufacturing excellence.', size: 'medium' },
 ];
 
 export const Certifications = () => {
