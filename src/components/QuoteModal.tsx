@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
+import { X, Mail, Phone, MapPin, Send, CheckCircle2, bookUser  } from 'lucide-react';
 
 interface QuoteModalProps {
   isOpen: boolean;
@@ -76,6 +76,15 @@ export const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
               </div>
 
               <div className="space-y-6">
+                <div className="flex items-center gap-4 group">
+                  <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-accent">
+                    <bookUser className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-black uppercase tracking-widest text-white/40">Address</p>
+                    <p className="text-sm font-bold">SAMRIDDHI HERBACUTICALS PVT. LTD. IK-6A, Solitare Industrial Park Phase-1 Bagru Jaipur 07 ,(303007)</p>
+                  </div>
+                </div>
                 <div className="flex items-center gap-4 group">
                   <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-accent">
                     <Mail className="w-5 h-5" />
