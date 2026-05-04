@@ -41,6 +41,15 @@ export const LeadForm = () => {
                 <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
                 <p className="text-2xl font-black text-primary tracking-tight">officesamriddhig@gmail.com</p>
               </div>
+            </div>            
+            <div className="flex items-center gap-6 group">
+              <div className="w-16 h-16 bg-primary text-accent rounded-[2rem] flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                <Globe className="w-8 h-8" />
+              </div>
+              <div>
+                <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Address</p>
+                <p className="text-2xl font-black text-primary tracking-tight">SAMRIDDHI HERBACUTICALS PVT. LTD. IK-6A, Solitare Industrial Park Phase-1 Bagru Jaipur 07 ,(303007)</p>
+              </div>
             </div>
           </div>
         </div>
