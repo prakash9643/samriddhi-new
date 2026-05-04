@@ -82,7 +82,7 @@ export const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
                   </div>
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-widest text-white/40">Email ID</p>
-                    <p className="text-sm font-bold">info@samriddhiherbaceuticals.com</p>
+                    <p className="text-sm font-bold">officesamriddhig@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 group">
@@ -91,7 +91,7 @@ export const QuoteModal = ({ isOpen, onClose }: QuoteModalProps) => {
                   </div>
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-widest text-white/40">Phone Number</p>
-                    <p className="text-sm font-bold">+91 63675 08970</p>
+                    <p className="text-sm font-bold">+91 9636061622</p>
                   </div>
                 </div>
               </div>

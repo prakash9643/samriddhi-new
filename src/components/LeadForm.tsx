@@ -30,7 +30,7 @@ export const LeadForm = () => {
               </div>
               <div>
                 <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Call Us</p>
-                <p className="text-2xl font-black text-primary tracking-tight">+91 98765 43210</p>
+                <p className="text-2xl font-black text-primary tracking-tight">+91 9636061622</p>
               </div>
             </div>
             <div className="flex items-center gap-6 group">
@@ -39,7 +39,7 @@ export const LeadForm = () => {
               </div>
               <div>
                 <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Email Us</p>
-                <p className="text-2xl font-black text-primary tracking-tight">info@samriddhi.com</p>
+                <p className="text-2xl font-black text-primary tracking-tight">officesamriddhig@gmail.com</p>
               </div>
             </div>
           </div>
