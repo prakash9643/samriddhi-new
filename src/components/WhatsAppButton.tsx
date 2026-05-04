@@ -11,7 +11,7 @@ export const WhatsAppButton = () => {
         className="absolute inset-0 bg-[#25D366] rounded-full blur-xl"
       />
       <motion.a
-        href="https://wa.me/9636061622"
+        href="https://wa.me/916367508970"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
