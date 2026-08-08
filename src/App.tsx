@@ -19,6 +19,7 @@ import { WhatsAppButton } from './components/WhatsAppButton';
 import { CustomCursor } from './components/CustomCursor';
 import { ScrollProgressBar } from './components/ScrollProgressBar';
 import { Reveal } from './components/Reveal';
+import { Analytics } from '@vercel/analytics/react';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutPage from './pages/About';
@@ -80,6 +81,7 @@ function App() {
         </main>
         <Footer />
         <WhatsAppButton />
+        <Analytics />
       </div>
     </Router>
   );
